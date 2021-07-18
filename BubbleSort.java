@@ -41,7 +41,7 @@ public class BubbleSort {
         for (int i = 0; i < a.size() - 1; i++) {
             for (int j = 0; j < a.size() - 1 - i; j++) {
                 if (a.get(j) > a.get(j + 1)) {
-                    // 异或
+                    // 异或实现变量值的对换
                     a.set(j, a.get(j) ^ a.get(j + 1));
                     a.set(j + 1, a.get(j) ^ a.get(j + 1));
                     a.set(j, a.get(j) ^ a.get(j + 1));
