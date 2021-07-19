@@ -1,7 +1,6 @@
 package com.hex.test.sort;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class BubbleSort {
     /**
@@ -10,29 +9,18 @@ public class BubbleSort {
      */
     public static void main(String[] args) {
 
-        Random random = new Random();
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            list.add(random.nextInt(50));
-        }
+        ArrayList<Integer> list = Utils.createList();
 
-        printList(list);
+        // 打印原始列表
+        Utils.printList(list);
 
-        System.out.println();
-        System.out.println("-----------------");
+        // 分隔线
+        Utils.separateLine();
 
         //bubble sort
-        printList(sort(list));
+        Utils.printList(sort(list));
     }
 
-    private static void printList(ArrayList<Integer> list) {
-        /*
-        打印列表
-         */
-        list.stream().forEach(x -> {
-            System.out.print(x + " ");
-        });
-    }
 
     static ArrayList<Integer> sort(ArrayList<Integer> a) {
         /*
