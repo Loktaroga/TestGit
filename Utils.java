@@ -15,6 +15,9 @@ public class Utils {
     }
 
     public static ArrayList<Integer> createList() {
+        /*
+        生成随机整数列表
+         */
         Random random = new Random();
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
@@ -25,6 +28,9 @@ public class Utils {
     }
 
     public static void separateLine() {
+        /*
+        打印分隔线
+         */
         System.out.println();
         System.out.println("-----------------------------");
     }
